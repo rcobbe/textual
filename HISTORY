@@ -1,1 +1,5 @@
+New in version 1.1:
+
+  - added View type and associated operation, to facilitate pattern matching.
+
 Version 1.0.0: initial release.

@@ -7,7 +7,7 @@
 --   places where they didn't previously need to, but this is a relatively
 --   minor cost.
 
-module Data.Textual(Textual(..)) where
+module Data.Textual(Textual(..), View(..), view) where
 
 import qualified Data.List as List
 import qualified Data.Text as Text
@@ -107,4 +107,20 @@ instance Textual Lazy.Text where
 
   span = Lazy.span
 
+-- | View of a Textual value, for pattern matching.  The type variable @a@ is
+--   the actual type of the Textual value.  The decision to leave the rest of
+--   the textual value unconverted is intentional, as there are some
+--   applications where this is more convenient than converting the entire
+--   textual value to a form suitable for pattern matching.  Clients who
+--   wish to convert the entire value can use 'toString' above.
+data View a = Empty
+              -- ^ empty textual value
+            | Char :|: a
+              -- ^ first character and the rest of the textual value
 
+-- | Construct the View of a Textual value.
+view :: Textual a => a -> View a
+view txt =
+  if Data.Textual.null txt
+  then Empty
+  else (Data.Textual.head txt) :|: (Data.Textual.tail txt)
