@@ -9,6 +9,7 @@
 
 module Data.Textual(Textual(..)) where
 
+import qualified Data.List as List
 import qualified Data.Text as Text
 import qualified Data.Text.Lazy as Lazy
 
@@ -68,7 +69,7 @@ instance Textual String where
 
   append = (++)
   concat = Prelude.concat
-  intercalate = Prelude.intercalate
+  intercalate = List.intercalate
 
   span = Prelude.span
 
