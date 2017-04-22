@@ -20,7 +20,7 @@ Synopsis:           Type class for abstracting over representation of textual da
 Extra-Source-Files: HISTORY
 Build-Type:         Simple
 License:            Apache-2.0
-License-File:       LICENSE.txt
+License-File:       LICENSE
 Copyright:          (c) 2013-2017 Richard Cobbe
 Maintainer:         rcobbe@rcobbe.net
 Stability:          alpha
