@@ -1,3 +1,7 @@
+New in version 2.0:
+
+  - License under Apache 2.
+
 New in version 1.1:
 
   - added View type and associated operation, to facilitate pattern matching.

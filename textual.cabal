@@ -1,13 +1,28 @@
+-- Copyright 2013-2017 Richard Cobbe
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--   http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitations under the License.
+        
 Name:               textual
-Version:            1.1.0
+Version:            2.0
 Cabal-Version:      >= 1.14
 Author:             Richard Cobbe
 Synopsis:           Type class for abstracting over representation of textual data
 Extra-Source-Files: HISTORY
 Build-Type:         Simple
-License:            AllRightsReserved
-Copyright:          (c) 2013 Richard Cobbe
-Maintainer:         cobbe@ccs.neu.edu
+License:            Apache-2.0
+License-File:       LICENSE.txt
+Copyright:          (c) 2013-2017 Richard Cobbe
+Maintainer:         rcobbe@rcobbe.net
 Stability:          alpha
 Category:           Data
 Description:        This package defines a type class that contains frequently-used string operations, and instances of that class for common string types.
